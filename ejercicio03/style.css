@@ -8,21 +8,25 @@ div,article,aside,main,header,nav,p,section,h3,body,html{
     box-sizing: border-box;
 }
 
+.articulo1{
+        background-color: aqua;
+    }
+.articulo2{
+        background-color: beige;
+    }
+.articulo3{
+        background-color: cadetblue;
+    }
 
 li , a{
     list-style: none;
     text-decoration: none;
 }
 
-.contenedor_pagina{
-    background-color: aqua;
-    width: 100%;
-    height: 100vh;
-}
 
 .header{
     width: 100%;
-    height: 25vh;
+    height: 18vh;
     background-color: azure;
 }
 
@@ -45,21 +49,25 @@ li , a{
     flex-direction: column;
 }
 
-.articulo{
+.articulo , .articulo1div{
     display: flex;
     align-items: flex-start;
     gap: 25px;
-    height: 300px;
     width: 100%;
 }
 
+.articulo{
+    padding: 0px 25px;
+}
+
+
 .articulo img{
-    width: 330px;
-    height: 220px;
-    min-width: 200px;
+    max-width: 240px;
+    height: 250px;
+    min-width: 100px;
     object-fit: cover;
     margin-right: 10px;
-
+    margin-bottom: 45px;
 }
 
 .seccionNav{
@@ -94,13 +102,17 @@ h3{
     }
 
     .header{
+        height: 15vh;
+    }
+
+    .header , .dosart{
         display: flex;
-        height: 10vh;
     }
 
     .seccionHeader , .seccionNav{
         height: auto;
     }
+
 
     ul{
         gap: 15px;
@@ -110,5 +122,29 @@ h3{
 
     .articulo{
         align-items: center;
+        flex-direction: column;
+        height: auto;
+        padding: 0px 20px;
+    }
+
+    .articulo1div{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .articulo2, .articulo3{
+        width: 50%;
+    }
+
+    .dosart{
+        flex-grow: 1;
+    }
+
+    .contenidoMain{
+        height: 100%;
+    }
+
+    .articulo img{
+        margin-right: 0%;
     }
 }
