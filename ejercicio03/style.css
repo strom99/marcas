@@ -1,0 +1,114 @@
+div,article,aside,main,header,nav,p,section,h3,body,html{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+li , a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.contenedor_pagina{
+    background-color: aqua;
+    width: 100%;
+    height: 100vh;
+}
+
+.header{
+    width: 100%;
+    height: 25vh;
+    background-color: azure;
+}
+
+.seccionHeader{
+    background-color: greenyellow;
+    text-align: center;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccionHeader h1{
+    background-color: honeydew;
+    width: 85%;
+}
+.contenidoMain{
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+}
+
+.articulo{
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    height: 300px;
+    width: 100%;
+}
+
+.articulo img{
+    width: 330px;
+    height: 220px;
+    min-width: 200px;
+    object-fit: cover;
+    margin-right: 10px;
+
+}
+
+.seccionNav{
+    background-color: hotpink;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 0;
+}
+
+h3{
+    background-color: azure;
+    padding: 10px 20px;
+    width: auto;
+}
+
+@media screen and (min-width:600px) and (max-width:900px){
+    .seccionHeader{
+        background-color:  blue;
+    }
+
+    .header{
+        display: flex;
+        height: 10vh;
+    }
+
+    .seccionHeader , .seccionNav{
+        height: auto;
+    }
+
+    ul{
+        gap: 15px;
+        flex-wrap: wrap;
+        width: 120px;
+    }
+
+    .articulo{
+        align-items: center;
+    }
+}
