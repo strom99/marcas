@@ -19,8 +19,7 @@ div,article,aside,main,header,nav,p,section,h1,h2,body,html{
 }
 .nav {
     width: 90%;
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 50px;
 }
 .redes_sociales{
     width: 100%;
@@ -35,9 +34,6 @@ div,article,aside,main,header,nav,p,section,h1,h2,body,html{
     height: 300px;
 }
 
-img{
-    width: 100%;
-}
 .w70{
     width: 70%;
 }
@@ -57,7 +53,6 @@ img{
 
 .imagenHeader{
     height: 140px;
-    object-fit: cover;
 }
 
 .w80{
@@ -69,7 +64,7 @@ img{
     align-items: center;
 }
 
-main>section>article {
+.cajaArticulo1 , .cajaArticulo2{
     background-color: gray;
     margin-top: 15px;
 }
@@ -78,7 +73,7 @@ main>section>article {
     text-align:center;
 }
 
-main>section>article>div>img{
+img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -98,24 +93,16 @@ aside>nav>a{
     width: 100%;
     display: inline-block;
 }
-aside>div{
-    text-align: center;
-}
 
 .cajaArticulo2{
     margin-bottom: 20px;
 }
 .imagen_aside1{
-    width: 90%;
+    width: 80%;
     height: 250px;
     margin-bottom: 30px;
 }
 
-.imagen_aside1 img{
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
 
 .cajaDerecha{
     padding-top: 20px;
@@ -145,6 +132,7 @@ aside>div{
     }
     .cajaDerecha nav{
         flex-direction: row;
+        margin-bottom: 0%;
         
     }
     .redes_sociales{
